@@ -1,3 +1,5 @@
+
+# Vendor info
 vendor_list = {
     "AAME": {
         "name": "A AMERICA", 
@@ -28,8 +30,8 @@ vendor_list = {
         "freight": 14
     },
     "EKOR": {
-        "name": "E KORNES", 
-        "freight": 0
+        "name": "EKORNES", 
+        "freight": "Refer to the MSRP Price Listing"
     },
     "EMLD": {
         "name": "EMERALD", 
@@ -41,7 +43,7 @@ vendor_list = {
     },
     "FLEX": {
         "name": "FLEXSTEEL", 
-        "freight": 10
+        "freight": "On Backroom: (Best Price + Delivery) * 2"
     },
     "GMST": {
         "name": "GUARDMASTER/BEDGEAR", 
@@ -56,7 +58,7 @@ vendor_list = {
         "freight": 14
     },
     "INFD": {
-        "name": "INTERNATIONAL FURN", 
+        "name": "INTERNATIONAL FURNITURE DESIGN", 
         "freight": 20
     },
     "JONL": {
@@ -81,15 +83,15 @@ vendor_list = {
     },
     "SEAL": {
         "name": "SEALY", 
-        "freight": 3
+        "freight": "Refer to the MSRP Price Listing"
     },
     "SERT": {
         "name": "SERTA", 
-        "freight": 2
+        "freight": "Refer to the MSRP Price Listing"
     },
     "SIMN": {
         "name": "SIMMONS", 
-        "freight": 2
+        "freight": "Refer to the MSRP Price Listing"
     },
     "SOMO": {
         "name": "SOUTHERN MOTION", 
@@ -114,5 +116,31 @@ vendor_list = {
     "WHTR": {
         "name": "WHITTIER", 
         "freight": 3
+    }
+}
+
+
+
+# commission % and ranges
+commission = {
+    "A": {
+        "percentage": (7-10),
+        "range": (47, 100)
+    },
+    "X": {
+        "percentage": 6,
+        "range": (40, 46)
+    },
+    "C": {
+        "percentage": 5,
+        "range": (35, 39)
+    },
+    "H": {
+        "percentage": 4,
+        "range": (25, 34)
+    },
+    "Y": {
+        "percentage": 2,
+        "range": (0, 24)
     }
 }
