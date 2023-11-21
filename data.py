@@ -43,7 +43,7 @@ vendor_list = {
     },
     "FLEX": {
         "name": "FLEXSTEEL", 
-        "freight": "On Backroom: (Best Price + Delivery) * 2"
+        "freight": 0
     },
     "GMST": {
         "name": "GUARDMASTER/BEDGEAR", 
