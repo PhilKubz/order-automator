@@ -102,8 +102,8 @@ vendor_list = {
         "freight": 20
     },
     "TEMP": {
-        "name": "TEMPUR", 
-        "freight": 2
+        "name": "TEMPURPEDIC", 
+        "freight": "Refer to the MSRP Price Listing"
     },
     "TRWD": {
         "name": "TRENDWOOD", 
