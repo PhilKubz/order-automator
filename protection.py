@@ -1,3 +1,5 @@
+# Process for protection plan routing, imported from main file for use
+
 import questionary
 
 def get_user_choice():
@@ -38,11 +40,9 @@ def get_protection_plan():
 
 
 
-
 # Overall protection function to export to main/other files
 
 
 def run_protection_protocol():
     return get_protection_plan()
-
 

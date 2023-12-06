@@ -17,7 +17,7 @@ def show_intro():
     print("                      Welcome to Order Automator")
     print("-----------------------------------------------------------------------")
     print(f"                         Beta Version: {version_info['number']}")
-    print(f"                     Latest data updated: {version_info['update_data']}")
+    print(f"                     Latest data update: {version_info['update_data']}")
     print(f"                        Creator: {version_info['creator']}")
     print("-----------------------------------------------------------------------")
 

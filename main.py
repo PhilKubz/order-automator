@@ -9,6 +9,7 @@ import random
 import string
 
 
+# global variable that all created orders are placed into
 all_orders = []
 
 
@@ -45,7 +46,7 @@ def get_vendor_code(vendor_list):
 
 
 
-# Handle vendor errors
+# Function to handle vendor errors
 
 def handle_vendor_error(vendor_list):
     return questionary.select(
@@ -113,6 +114,7 @@ def process_costs(vendor_list, vendor_code):
     cost_total = sum(total_costs)
     price_estimates, _ = calculate_price(total_costs, cost_factor)
     return total_costs, cost_total, price_estimates, "confirmed"
+
 
 
 # Function to get costs - used in process_costs

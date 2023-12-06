@@ -1,4 +1,3 @@
-
 # Vendor info
 vendor_list = {
     "AAME": {
