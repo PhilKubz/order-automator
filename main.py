@@ -1,6 +1,6 @@
-from data import vendor_list
+from vendorData import vendor_list
 from protectionData import protection_cost_data
-from intro import show_intro
+from orderAutomatorIntro import show_order_automator_intro
 from protection import run_protection_protocol
 
 import sys
@@ -154,7 +154,7 @@ def handle_order_action(action, total_costs, cost_factor):
 
 
 
-
+# Function to handle the next steps of an order after selecting 'n' during confirm process
 
 def handle_order_decision():
     action = questionary.select(
@@ -175,6 +175,8 @@ def check_order(item_count):
     if not correct:
         return handle_order_decision()
     return "Continue"
+
+
 
 
 
@@ -294,7 +296,7 @@ def calculate_protection_cost(suggested_retail, choice, protection_cost_data):
             cost = cost_info.get(choice, 0)
             
             if isinstance(cost, str):
-                # Handle percentage-based cost for higher ranges (based on a specific % of sale as stored in the protectionData file)
+                # Handle percentage-based cost for higher price ranges (based on a specific % of sale as stored in the protectionData file)
                 if '%' in cost:
                     percentage = float(cost.rstrip('% OF SALE')) / 100
                     return suggested_retail * percentage
@@ -462,7 +464,7 @@ def end_program():
 # Runs the program
 
 def main():
-    show_intro()
+    show_order_automator_intro()
 
     while True:
         vendor_code = get_vendor_code(vendor_list)

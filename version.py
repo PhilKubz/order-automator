@@ -2,7 +2,7 @@
 
 version_data = {
     "version": {
-        "number": "0.12",
+        "number": "0.13",
         "update_data": "4/12/23",
         "creator": "Philip Kubisz"
     }

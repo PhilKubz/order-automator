@@ -1,8 +1,8 @@
-# File to display intro text and version
+# File to display intro text and version for order automator
 
 from version import version_data
 
-def show_intro():
+def show_order_automator_intro():
     version_info = version_data["version"]
 
     print(r"                                                                       ")

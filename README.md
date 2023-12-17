@@ -10,6 +10,7 @@ Speed, accurarcy of pricing, and up-to-date vendor information are the key focus
 
 Simply start the program and follow inputs until you finish the order creation, where you may: create another order, view orders, or exit the program.
 
+A secondary program, Commission Protocol, also would allow for the ability to check commission codes of an item on sale, as well as find a minimum retail price that will keep the sale at highest commission percentage obtainable. This program would provide high value prices for a customer while ensuring the salesperson does not undercut their pay.
 
 
 
@@ -32,9 +33,17 @@ Simply start the program and follow inputs until you finish the order creation, 
 
 ## Details
 
-I an effort to simplify/expedite the special order process, this application allows users to minmize downtime during a sale in adition to providing accurate information that can be useful for quicker purchase order writing as well. The data that is used will always be the most up-to-date for vendor information and pricing, thus providing accurate, instant pricing on the orders as well.
+In an effort to simplify/expedite the special order process, this application allows users to minmize downtime during a sale in adition to providing accurate information that can be useful for quicker purchase order writing as well. The data that is used will always be the most up-to-date for vendor information and pricing, thus providing accurate, instant pricing on the orders as well.
 
-A large importance of this program is makign it easy to navigate. Many users for this program will not be rather 'tech-savy', so it is crucial to design a program that is straightforward and does not allow users to be lost or misunderstand the process at any given step of the program use.
+A large importance of this program is making it easy to navigate. Many users for this program will not be rather 'tech-savy', so it is crucial to design a program that is straightforward and does not allow users to be lost or misunderstand the process at any given step of the program use.
+
+Program 1: Order Automator
+- Designed to automatically price/quote a special order based on criteria that a user inputs.
+
+Program 2: Commission Protocol
+1. Check the commission on any given item based on its retail sale and unit cost
+2. Determine the lowest retail price possible while maintaining full commission
+- Designed in order to allow for proper pricing ranges for special orders to not undercut the company or salesperson
 
 
 
@@ -64,6 +73,7 @@ The application can be made into a .exe application with the use of a pyinstalle
 pyinstaller --onefile --name "Order Automator" main.py
 ```
 
+
 For use of this on the work network, it may be distributed via public access networks for computers on the company file system, hosted for download online, or manually distributed.
 
 Most important is that this application is easily updated when vendor freight changes take place. The current set-up allows for easy data updates to not affect the performance quality of the application, simply update values.
@@ -71,6 +81,13 @@ Note: Orders are only stored for a per session usage, currently they are created
 
 
 ## Patch Log
+
+v 0.13: Commission Protocol program created
+        This program allows for two programs to be run inside of it:
+        - Check commission codes based on vendor, retail price, and unit cost
+        - Check minimum retail sale price while staying in proper commission range
+        -- Program is functional and reusable in a single session, but will be further updated for storing completed process data
+        Introduce package to improvide displaying results
 
 v 0.12: Further improvements with order creation
         Functions refactored to clean-up code
@@ -93,4 +110,4 @@ Email:    [philip.kubisz#gmail.com](philip.kubisz#gmail.com)
 
 LinkedIn: [https://www.linkedin.com/in/philipkubisz/](https://www.linkedin.com/in/philipkubisz/)
 
--- This is a project to both help in the current work environment, as well as learn Python. So anything unusual with file structure or usage of Python is purely as a novice just starting to learn Python.
+-- This is a project to both help in the current work environment, as well as learn Python and further my understanding in software engineering. So anything unusual with file structure or usage of Python is purely as a novice learning Python. All skills will be refined, and code improved as I continue work on the project.
